@@ -25,10 +25,7 @@
             color: white;
         }
 
-        #wrapper {
-            background: transparent;
-        }
-
+        #wrapper,
         #main {
             background: transparent;
         }
@@ -42,6 +39,7 @@
             color: white;
             border-radius: 0 0 25px 25px;
             padding: 5rem 2rem;
+            text-align: center;
         }
 
         #header h1 {
@@ -106,7 +104,7 @@
         }
 
         /* =========================
-           TYPOGRAPHY
+           TEXT
         ========================== */
 
         h1, h2, h3, h4, h5, h6,
@@ -161,6 +159,35 @@
         }
 
         /* =========================
+           BUTTON (CENTERED TEXT FIX)
+        ========================== */
+
+        .button {
+            background: #c8b9a4 !important;
+            color: white !important;
+            border-radius: 30px;
+            border: none !important;
+            box-shadow: none !important;
+
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+
+            padding: 0.9rem 2.5rem;
+            text-align: center;
+            text-decoration: none;
+            font-weight: 600;
+
+            transition: 0.3s ease;
+        }
+
+        .button:hover {
+            background: white !important;
+            color: #541c25 !important;
+            transform: translateY(-2px);
+        }
+
+        /* =========================
            FOOTER
         ========================== */
 
@@ -181,32 +208,72 @@
         }
 
         /* =========================
-           BUTTONS
+           MOBILE RESPONSIVE FIX
         ========================== */
 
-        .button {
-    background: #c8b9a4 !important;
-    color: white !important;
-    border-radius: 30px;
-    border: none !important;
-    box-shadow: none !important;
+        @media screen and (max-width: 768px) {
 
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+            .main {
+                padding: 1.5rem !important;
+                margin: 1rem !important;
+            }
 
-    padding: 0.8rem 2.5rem;
-    text-align: center;
-    text-decoration: none;
-    font-weight: 600;
+            #header {
+                padding: 3rem 1.5rem;
+                text-align: center;
+            }
 
-    transition: 0.3s ease;
-}
+            #header h1 {
+                font-size: 2.5rem !important;
+            }
 
-        .button:hover {
-            background: white !important;
-            color: #541c25 !important;
-            transform: translateY(-2px);
+            #header p {
+                font-size: 1rem;
+                padding: 0 0.5rem;
+            }
+
+            #nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+                border-radius: 20px;
+                padding: 0.5rem;
+            }
+
+            #nav ul li {
+                margin: 0.3rem;
+            }
+
+            #nav ul li a {
+                padding: 0.5rem 1rem;
+                font-size: 0.9rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            p {
+                font-size: 0.95rem;
+            }
+
+            .spotlight {
+                flex-direction: column !important;
+                text-align: center;
+            }
+
+            .image img {
+                max-width: 100%;
+                height: auto;
+            }
+
+            .button {
+                width: 100%;
+                padding: 1rem;
+            }
+
+            .video-container {
+                border-width: 3px;
+            }
         }
 
     </style>
@@ -215,11 +282,7 @@
 
 <body class="is-preload">
 
-    <!-- Wrapper -->
-
     <div id="wrapper">
-
-        <!-- Header -->
 
         <header id="header" class="alt">
 
@@ -234,24 +297,16 @@
 
         </header>
 
-        <!-- Navigation -->
-
         <nav id="nav">
-
             <ul>
                 <li><a href="#intro" class="active">About</a></li>
                 <li><a href="#poster">Poster</a></li>
                 <li><a href="#demo">Demo</a></li>
                 <li><a href="#report">Report</a></li>
             </ul>
-
         </nav>
 
-        <!-- Main -->
-
         <div id="main">
-
-            <!-- About Section -->
 
             <section id="intro" class="main">
 
@@ -263,30 +318,17 @@
                             <h2>About The Project</h2>
                         </header>
 
-                        <p>
-                            “FOCUS – Learning to See Again” is a visually driven short film that follows Ella, a young photographer struggling with grief after losing her close friend and mentor, Liam.
-                        </p>
+                        <p>“FOCUS – Learning to See Again” is a visually driven short film that follows Ella, a young photographer struggling with grief after losing her close friend and mentor, Liam.</p>
 
-                        <p>
-                            Once inspired by his encouragement and love for photography, Ella becomes emotionally disconnected from both her creativity and the world around her.
-                        </p>
+                        <p>Once inspired by his encouragement and love for photography, Ella becomes emotionally disconnected.</p>
 
-                        <p>
-                            When she discovers an old memory card filled with photographs and videos Liam captured of her, she begins to reconnect with the memories, places, and emotions they once shared.
-                        </p>
+                        <p>She later discovers an old memory card filled with his photos of her, helping her reconnect with memory and emotion.</p>
 
-                        <p>
-                            The film uses minimal dialogue and relies heavily on cinematography, colour grading, lighting, and sound design to communicate emotional progression.
-                        </p>
+                        <p>The film uses cinematography, colour grading, lighting, and sound design to communicate emotional progression.</p>
 
-                        <p>
-                            Technologies used:
-                            DaVinci Resolve, Adobe After Effects, StoryTribe, and Autodesk Flow Production Tracking.
-                        </p>
+                        <p>Technologies used: DaVinci Resolve, Adobe After Effects, StoryTribe, Autodesk Flow Production Tracking.</p>
 
                     </div>
-
-                    <!-- Your Photo -->
 
                     <span class="image">
                         <img src="images/me.png" alt="Photo of me" />
@@ -296,8 +338,6 @@
 
             </section>
 
-            <!-- Poster Section -->
-
             <section id="poster" class="main special">
 
                 <header class="major">
@@ -305,15 +345,9 @@
                     <p>Final presentation poster for the project.</p>
                 </header>
 
-                <img
-                    src="images/poster.png"
-                    alt="Project Poster"
-                    class="poster-image"
-                />
+                <img src="images/poster.png" alt="Poster" class="poster-image" />
 
             </section>
-
-            <!-- Demo Section -->
 
             <section id="demo" class="main special">
 
@@ -323,19 +357,15 @@
                 </header>
 
                 <div class="video-container">
-
                     <iframe
                         src="https://www.youtube.com/embed/2sVXEeanDTI"
                         title="YouTube video player"
                         frameborder="0"
                         allowfullscreen>
                     </iframe>
-
                 </div>
 
             </section>
-
-            <!-- Report Section -->
 
             <section id="report" class="main special">
 
@@ -345,25 +375,18 @@
                 </header>
 
                 <ul class="actions special">
-
                     <li>
-                        <a
-                            href="files/Focus_Report_Sem2_20102339.pdf"
-                            target="_blank"
-                            class="button">
-
+                        <a href="Focus_Report_Sem2_20102339.pdf"
+                           target="_blank"
+                           class="button">
                             View Report
-
                         </a>
                     </li>
-
                 </ul>
 
             </section>
 
         </div>
-
-        <!-- Footer -->
 
         <footer id="footer">
 
@@ -377,18 +400,10 @@
                     <dd>Shannon Tobin</dd>
 
                     <dt>Email</dt>
-                    <dd>
-                        <a href="mailto:20102339@setu.ie">
-                            20102339@setu.ie
-                        </a>
-                    </dd>
+                    <dd><a href="mailto:20102339@setu.ie">20102339@setu.ie</a></dd>
 
                     <dt>GitHub</dt>
-                    <dd>
-                        <a href="https://github.com/shabbibz">
-                            github.com/shabbibz
-                        </a>
-                    </dd>
+                    <dd><a href="https://github.com/shabbibz">github.com/shabbibz</a></dd>
 
                 </dl>
 
@@ -402,8 +417,6 @@
 
     </div>
 
-    <!-- Scripts -->
-
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery.scrollex.min.js"></script>
     <script src="assets/js/jquery.scrolly.min.js"></script>
@@ -413,5 +426,4 @@
     <script src="assets/js/main.js"></script>
 
 </body>
-
 </html>
