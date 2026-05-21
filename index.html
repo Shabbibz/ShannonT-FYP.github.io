@@ -1,3 +1,62 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+    <title>FOCUS - Learning To See Again</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
+
+    <style>
+
+        /* Header Styling */
+        #header h1 {
+            font-size: 4rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        #header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        /* Poster Styling */
+        .poster-image {
+            width: 100%;
+            max-width: 900px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        /* YouTube Video */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 20px;
+            margin-top: 2rem;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+        }
+
+    </style>
+
+</head>
+
 <body class="is-preload">
 
     <!-- Wrapper -->
@@ -5,24 +64,21 @@
 
         <!-- Header -->
         <header id="header" class="alt">
-            <span class="logo">
-                <img src="images/logo.svg" alt="Project Logo" />
-            </span>
 
-            <h1>My Final Year Project</h1>
+            <h1>FOCUS</h1>
 
             <p>
-                AI-Powered Smart Assistant for Students<br />
-                Created by Your Name
+                “FOCUS – Learning to See Again” is a short emotional drama about a young photographer rediscovering her passion and sense of self after the loss of her closest friend. Through memory, colour, and visual storytelling, the film explores grief, healing, and creative rediscovery.<br />
+                Created by Shannon Tobin
             </p>
+
         </header>
 
-        <!-- Nav -->
+        <!-- Navigation -->
         <nav id="nav">
             <ul>
                 <li><a href="#intro" class="active">About</a></li>
                 <li><a href="#poster">Poster</a></li>
-                <li><a href="#gallery">Gallery</a></li>
                 <li><a href="#demo">Demo</a></li>
             </ul>
         </nav>
@@ -32,32 +88,35 @@
 
             <!-- About Section -->
             <section id="intro" class="main">
+
                 <div class="spotlight">
 
                     <div class="content">
+
                         <header class="major">
                             <h2>About The Project</h2>
                         </header>
 
                         <p>
-                            This project focuses on developing an intelligent
-                            web-based platform that helps students organise
-                            tasks, manage schedules, and improve productivity
-                            using AI recommendations.
+                            “FOCUS – Learning to See Again” is a visually driven short film that follows Ella, a young photographer struggling with grief after losing her close friend and mentor, Liam. Once inspired by his encouragement and love for photography, Ella becomes emotionally disconnected from both her creativity and the world around her. When she discovers an old memory card filled with photographs and videos Liam captured of her, she begins to reconnect with the memories, places, and emotions they once shared.
+
+The film uses minimal dialogue and relies heavily on cinematography, colour grading, lighting, and sound design to communicate emotional progression. Through the gradual transition from muted, desaturated tones to warmer colours, the narrative symbolises Ella’s journey from isolation towards healing and rediscovery. Developed using DaVinci Resolve, Adobe After Effects, and a hybrid production methodology, “FOCUS” explores themes of loss, memory, personal growth, and the power of art as a form of emotional recovery.
                         </p>
 
                         <p>
                             Technologies used:
-                            HTML, CSS, JavaScript, Python, Flask, and OpenAI API.
+                            DaVinvi Resolve, Adobe After Effects, StoryTribe, AutoDesk Flow Production Tracking.
                         </p>
+
                     </div>
 
-                    <!-- Your photo -->
+                    <!-- Your Photo -->
                     <span class="image">
-                        <img src="images/me.jpg" alt="Photo of me" />
+                        <img src="images/me.png" alt="Photo of me" />
                     </span>
 
                 </div>
+
             </section>
 
             <!-- Poster Section -->
@@ -69,44 +128,10 @@
                 </header>
 
                 <img
-                    src="images/poster.jpg"
+                    src="images/poster.png"
                     alt="Project Poster"
-                    style="
-                        width: 100%;
-                        max-width: 900px;
-                        border-radius: 20px;
-                        box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-                    "
+                    class="poster-image"
                 />
-
-            </section>
-
-            <!-- Gallery -->
-            <section id="gallery" class="main special">
-
-                <header class="major">
-                    <h2>Gallery</h2>
-                    <p>Development and presentation highlights.</p>
-                </header>
-
-                <div
-                    style="
-                        display: grid;
-                        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-                        gap: 20px;
-                    "
-                >
-
-                    <img src="images/photo1.jpg" alt=""
-                        style="width:100%; border-radius:15px;" />
-
-                    <img src="images/photo2.jpg" alt=""
-                        style="width:100%; border-radius:15px;" />
-
-                    <img src="images/photo3.jpg" alt=""
-                        style="width:100%; border-radius:15px;" />
-
-                </div>
 
             </section>
 
@@ -118,30 +143,14 @@
                     <p>Watch the full demonstration video below.</p>
                 </header>
 
-                <div
-                    style="
-                        position: relative;
-                        padding-bottom: 56.25%;
-                        height: 0;
-                        overflow: hidden;
-                        border-radius: 20px;
-                    "
-                >
+                <div class="video-container">
 
                     <iframe
-                        src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+                        src="https://www.youtube.com/embed/2sVXEeanDTI"
                         title="YouTube video player"
                         frameborder="0"
-                        allowfullscreen
-                        style="
-                            position: absolute;
-                            top: 0;
-                            left: 0;
-                            width: 100%;
-                            height: 100%;
-                            border-radius: 20px;
-                        "
-                    ></iframe>
+                        allowfullscreen>
+                    </iframe>
 
                 </div>
 
@@ -153,30 +162,34 @@
         <footer id="footer">
 
             <section>
+
                 <h2>Contact</h2>
 
                 <dl class="alt">
+
                     <dt>Name</dt>
-                    <dd>Your Name</dd>
+                    <dd>Shannon Tobin</dd>
 
                     <dt>Email</dt>
                     <dd>
-                        <a href="mailto:youremail@example.com">
-                            youremail@example.com
+                        <a href="mailto:20102339@setu.ie">
+                            20102339@setu.ie
                         </a>
                     </dd>
 
                     <dt>GitHub</dt>
                     <dd>
-                        <a href="https://github.com/yourusername">
-                            github.com/yourusername
+                        <a href="https://github.com/shabbibz">
+                            github.com/shabbibz
                         </a>
                     </dd>
+
                 </dl>
+
             </section>
 
             <p class="copyright">
-                &copy; 2026 Your Name
+                &copy; 2026 Shannon Tobin
             </p>
 
         </footer>
@@ -193,3 +206,4 @@
     <script src="assets/js/main.js"></script>
 
 </body>
+</html>
